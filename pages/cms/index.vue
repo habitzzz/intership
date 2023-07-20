@@ -1,7 +1,11 @@
 <template>
-    <NuxtLayout name="cms">
-        <template #header><TheHeader /></template>
-        <h1>Content CMS</h1>
-        <template #sidenav><TheSideNav /></template>
-    </NuxtLayout>
+  <NuxtLayout name="cms">
+    <template #header>
+      <TheHeader />
+    </template>
+    <p>ini content</p>
+    <template #sidenav>
+      <TheSidenav />
+    </template>
+  </NuxtLayout>
 </template>

@@ -1,11 +1,9 @@
-<!-- client layout  -->
-
 <template>
   <div>
-    <!-- Some *client* layout -->
     <header>
-        <TheHeader />
+        <slot name="header"></slot>
     </header>
+    <!-- Some default layout shared across all pages -->
     <slot />
   </div>
 </template>

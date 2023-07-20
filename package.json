@@ -9,15 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.92",
+    "@iconify/json": "^2.2.93",
     "@nuxt/devtools": "latest",
     "@nuxtjs/supabase": "^0.3.8",
     "@types/node": "^18.16.19",
     "@unocss/nuxt": "^0.53.5",
-    "nuxt": "^3.6.3"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.4"
+    "nuxt": "^3.6.5"
   }
 }

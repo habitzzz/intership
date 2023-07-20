@@ -1,22 +1,26 @@
 <template>
-  <NuxtLayout name="client">
-    <div>
-      <FooButton @click="handleClick">Klik Saya</FooButton>
-      <FooButton type="primary" @click="handlePrimaryClick"
-        >Tombol Utama</FooButton
-      >
-      <FooButton type="secondary" disabled="true"
-        >Tombol Dinonaktifkan</FooButton
-      >
-    </div>
-  </NuxtLayout>
+    <NuxtLayout name="client">
+        <template #header>
+            <TheHeader />
+        </template>
+        <FooButton @click="goToCms()" >button ke CMS</FooButton>
+        <FooButton @click="button1()">button default</FooButton>
+        <FooButton type="primary" @click="button2()">button primary</FooButton>
+        <FooButton disabled="true" >button disabled</FooButton>
+    </NuxtLayout>
 </template>
 
 <script setup>
-function handleClick() {
-  alert("Tombol diklik!");
+function button1() {
+    alert("Hello world!");
 }
-function handlePrimaryClick() {
-  alert("Tombol Utama diklik!");
+
+function button2() {
+    alert("Horayyyyyy!");
 }
+
+function goToCms() {
+    navigateTo('/cms')
+}
+
 </script>

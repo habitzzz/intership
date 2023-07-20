@@ -1,10 +1,9 @@
 <template>
   <button :class="buttonClass" @click="onClick">
-    <slot />
-    {{ type }}
+    <slot />    
   </button>
 </template>
-  
+   
 <script setup>
 const { type, disabled } = defineProps({
   type: {
@@ -17,9 +16,10 @@ const { type, disabled } = defineProps({
   },
 });
 
+const email = ref("");
+
 const buttonClass = computed(() => [
-  "px-4 py-2 border rounded",
-  type === "default"
+  "px-4 py-2 border rounded",  type === "default"
     ? "border-gray-400 text-gray-600"
     : type === "primary"
     ? "bg-blue-500 text-white"
@@ -27,4 +27,3 @@ const buttonClass = computed(() => [
   disabled && "opacity-50 cursor-not-allowed",
 ]);
 </script>
-  
